@@ -7,8 +7,6 @@ const mongoose = require("mongoose")
 const app = express()
 const encrypt = require("mongoose-encryption")
 
-console.log(process.env.SECRET)
-
 app.use(express.static("public"))
 app.set("view engine", "ejs")
 app.use(
